@@ -1,5 +1,5 @@
 import './skills.css'
-import { colors, backgroundColorClasses, Bullet } from './shared';
+import { colors, Bullet } from './shared';
 
 const areasOfInterest = [
   "Web development",

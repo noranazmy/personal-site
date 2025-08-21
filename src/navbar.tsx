@@ -1,15 +1,5 @@
 import './navbar.css';
 
-function Separator() {
-  return (
-    <span>&#x2022;</span>
-  )
-}
-
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return <a className="navlink" href={href}>{children}</a>;
-}
-
 function SocialLink({ href, imgSrc, alt }: { href: string; imgSrc: string; alt: string }) {
   return (
     <li className="social">
