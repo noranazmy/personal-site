@@ -29,7 +29,7 @@ function ProgressBar({ title, progress }: { title: string; progress: Number }) {
     <div>
       <div className="progress-title">
         <div>{title}</div>
-        <div>{progress}%</div>
+        <div>{progress.toString()}%</div>
       </div>
       <div className="progress-bar">
         <div style={{
@@ -55,8 +55,8 @@ export function Skills() {
         ))}
       </div>
       <div className="progress-grid">
-        {Array.from(skills.keys()).map((skill, index) => (
-          <ProgressBar title={skill} progress={skills.get(skill)} />
+        {Array.from(skills.keys()).map((skill) => (
+          <ProgressBar title={skill} progress={skills.get(skill)!} />
         ))}
       </div>
     </section>
