@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 160"
+        width="100%" height="160"
+        preserveAspectRatio="none"
+        role="img" aria-label="Scalloped edge background">
+        <rect width="1440" height="160" fill="#1d1d1d" />
+        <path fill="#fff"
+          d="M0 0
+         V120
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         a40 40 0 0 1 80 0
+         L1440 0
+         Z"/>
+      </svg>

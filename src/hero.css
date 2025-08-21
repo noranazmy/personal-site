@@ -1,0 +1,21 @@
+section.hero {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 48px;
+  max-width: 85%;
+  padding: 48px 0;
+}
+
+.heading {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 48px;
+}
+
+.hero-image {
+  --image-size: 250px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  height: var(--image-size);
+  width: var(--image-size);
+}

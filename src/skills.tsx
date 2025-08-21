@@ -1,0 +1,64 @@
+import './skills.css'
+import { colors, backgroundColorClasses, Bullet } from './shared';
+
+const areasOfInterest = [
+  "Web development",
+  "Full-stack development",
+  "UX design",
+  "Accessibility",
+  "System modeling",
+  "Ethics of technology",
+  "Academic research",
+];
+
+const skills = new Map([
+  ["TypeScript", 95],
+  ["HTML/CSS", 85],
+  ["Angular", 95],
+  ["React", 15],
+  ["Java", 85],
+  ["Dart", 50],
+  ["Go", 30],
+  ["Python", 15],
+  ["SQL", 85],
+  ["gRPC", 75],
+]);
+
+function ProgressBar({ title, progress }: { title: string; progress: Number }) {
+  return (
+    <div>
+      <div className="progress-title">
+        <div>{title}</div>
+        <div>{progress}%</div>
+      </div>
+      <div className="progress-bar">
+        <div style={{
+          width: `${progress}%`
+        }} className="progress">
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function Skills() {
+  return (
+    <section id="skills" className="skills">
+      <h1>Technical skills</h1>
+      <div className="areas-of-interest">
+        {areasOfInterest.map((area, index) => (
+          <div key={index} className="badge">
+            <Bullet fillColor={colors[index % colors.length]} />
+            <img src={`https://cdn.prod.website-files.com/6659affa71a3c7c8796f55fd/66716f45${index + 1}.svg`} loading="lazy" alt="" />
+            <span >{area}</span>
+          </div>
+        ))}
+      </div>
+      <div className="progress-grid">
+        {Array.from(skills.keys()).map((skill, index) => (
+          <ProgressBar title={skill} progress={skills.get(skill)} />
+        ))}
+      </div>
+    </section>
+  );
+}
