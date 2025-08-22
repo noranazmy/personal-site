@@ -12,16 +12,15 @@ const areasOfInterest = [
 ];
 
 const skills = new Map([
-  ["TypeScript", 95],
-  ["HTML/CSS", 85],
+  ["TypeScript", 90],
+  ["Python", 15],
+  ["Java", 85],
+  ["Go", 15],
+  ["HTML/CSS", 90],
   ["Angular", 95],
   ["React", 15],
-  ["Java", 85],
   ["Dart", 50],
-  ["Go", 30],
-  ["Python", 15],
   ["SQL", 85],
-  ["gRPC", 75],
 ]);
 
 function ProgressBar({ title, progress }: { title: string; progress: Number }) {
