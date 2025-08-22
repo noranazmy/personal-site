@@ -16,6 +16,7 @@ html {
 
   --app-width: 1280px;
   --content-width: 960px;
+  --min-content-width: 300px;
 
   --background: #F6F3EC;
   --surface: #ECE4DA;
@@ -91,57 +92,45 @@ a:visited {
 }
 
 h1 {
-  letter-spacing: -.02em;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 64px;
   font-weight: 300;
-  line-height: 46px;
 }
 
 h2 {
-  letter-spacing: -.02em;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 36px;
   font-weight: 200;
-  line-height: 40px;
 }
 
 h3 {
-  letter-spacing: -.02em;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 22px;
   font-weight: 300;
-  line-height: 32px;
 }
 
 h4 {
-  letter-spacing: -.02em;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 300;
-  line-height: 30px;
 }
 
 h5 {
-  letter-spacing: -.02em;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 19px;
   font-weight: 300;
-  line-height: 29px;
 }
 
 h6 {
-  letter-spacing: -.02em;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 300;
-  line-height: 28px;
 }
 
 p {
