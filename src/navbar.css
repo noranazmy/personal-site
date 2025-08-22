@@ -1,5 +1,14 @@
 section.navbar {
+  background: var(--surface);
+  position: sticky;
   padding: 48px 0;
+  transition: border-bottom 0.3s ease;
+  top: 0;
+  z-index: 1000;
+}
+
+section.navbar.scrolled {
+  border-bottom: 1px solid var(--text);
 }
 
 .navigation-bar {

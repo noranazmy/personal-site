@@ -1,4 +1,5 @@
 import './navbar.css';
+import { useEffect, useState } from "react";
 
 function SocialLink({ href, imgSrc, alt }: { href: string; imgSrc: string; alt: string }) {
   return (
@@ -11,10 +12,21 @@ function SocialLink({ href, imgSrc, alt }: { href: string; imgSrc: string; alt: 
 }
 
 export function NavBar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section id="navbar" className="navbar">
-      <div className="navigation-bar">
-        <div className="site-title"><a href="/">Noran Azmy</a></div>
+    <section id="navbar" className={`navbar full-bleed ${scrolled ? "scrolled" : ""}`}>
+      <div className="navigation-bar full-bleed-content">
+        <div className="site-title"><a href="#top">Noran Azmy</a></div>
         {/* TODO: Add the right navigation links. */}
         <div className="navigation">
         </div>
