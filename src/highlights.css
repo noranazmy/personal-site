@@ -1,7 +1,15 @@
 section.highlights {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 64px;
+  max-width: 85%;
+  padding: 48px 0;
+}
+
+.highlights-grid {
   display: grid;
   grid-gap: 64px;
   grid-template-columns: repeat(auto-fit, minmax(var(--min-content-width), 1fr));
-  max-width: 85%;
-  padding: 48px 0;
+
 }

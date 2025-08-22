@@ -19,3 +19,7 @@ section.hero {
   height: var(--image-size);
   width: var(--image-size);
 }
+
+.resume-button {
+  align-self: flex-start;
+}
