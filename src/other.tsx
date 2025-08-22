@@ -7,6 +7,27 @@ export function Other() {
       <p className="paragraph-large">
         I write personal reflections on faith and politics on my blog, <a target="_blank" href="http://themindfulmuslim.com">The Mindful Muslim</a>.
       </p>
+      <div className="paragraph-with-icon">
+        <img src="/palestine.png" alt="Palestine flag" />
+        <div>
+          <p className="paragraph-large">
+            I stand with a Free Palestine &mdash; freedom, dignity, and equal rights for everyone between the river and the sea.
+          </p>
+        </div>
+      </div>
+      <div className="paragraph-with-icon">
+        <div>
+          <img src="/sudan.png" alt="Sudan flag" />
+          <img src="/drc.png" alt="DRC flag" />
+        </div>
+        <div>
+          <p className="paragraph-large">
+            I stand with the struggle of Sudan and the Congo against oppression and violence waged for profit.
+          </p>
+        </div>
+      </div>
     </section >
   );
 }
+
+

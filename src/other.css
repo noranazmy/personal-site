@@ -10,3 +10,16 @@ section.other {
   flex-flow: column nowrap;
   gap: 48px;
 }
+
+.paragraph-with-icon {
+  align-items: top;
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  grid-template-rows: auto;
+  gap: 0 24px;
+}
+
+.paragraph-with-icon img {
+  grid-row: 1;
+  width: 32px;
+}
