@@ -51,6 +51,12 @@ section.full-bleed {
   width: 100%;
 }
 
+@media (max-width: 800px) {
+  .full-bleed-content {
+    padding: 0 var(--gutter);
+  }
+}
+
 body {
   background: var(--surface);
   color: var(--text);
