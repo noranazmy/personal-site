@@ -17,7 +17,9 @@ html {
   --content-width: 960px;
   --min-content-width: 300px;
   --gutter: clamp(16px, 5vw, 48px);
+}
 
+:root.theme-chocolate {
   --background: #F6F3EC;
   --surface: #ECE4DA;
   --accent: #B9A590;
