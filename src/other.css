@@ -2,7 +2,6 @@ section.other {
   display: flex;
   flex-flow: column nowrap;
   gap: 48px;
-  max-width: 85%;
   padding: 48px 0;
 }
 

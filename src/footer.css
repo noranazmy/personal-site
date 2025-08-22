@@ -1,4 +1,12 @@
 section.footer {
-  min-height: 320px;
+  background: var(--primary);
+  border-top: 2px solid var(--text);
+  color: var(--background);
   padding: 48px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
 }

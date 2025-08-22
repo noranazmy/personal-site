@@ -8,15 +8,13 @@ import { Other } from './other';
 
 export default function App() {
   return (
-    <div>
-      <div className="content">
-        <NavBar />
-        <Hero />
-        <Highlights />
-        <Skills />
-        <Other />
-        <Footer />
-      </div>
+    <div className="app">
+      <NavBar />
+      <Hero />
+      <Highlights />
+      <Skills />
+      <Other />
+      <Footer />
     </div>
   );
 }
