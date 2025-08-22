@@ -26,7 +26,7 @@ export function NavBar() {
   return (
     <section id="navbar" className={`navbar full-bleed ${scrolled ? "scrolled" : ""}`}>
       <div className="navigation-bar full-bleed-content">
-        <div className="site-title"><a href="#top">Noran Azmy</a></div>
+        <div className="site-title"><a href="/">Noran Azmy</a></div>
         {/* TODO: Add the right navigation links. */}
         <div className="navigation">
         </div>

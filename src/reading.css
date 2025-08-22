@@ -1,0 +1,64 @@
+.heading {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 48px;
+  padding: 48px 0;
+}
+
+.book-card {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 200px;
+  grid-template-rows: auto;
+  height: 560px;
+  padding: 48px;
+  gap: 48px;
+}
+
+.card-content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 32px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.book-cover {
+  height: 300px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.book-tags {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+}
+
+.book-cover-image {
+  border-radius: 16px;
+  height: 300px;
+  width: 200px;
+}
+
+.card-list {
+  display: grid;
+  grid-gap: 48px;
+  grid-template-columns: auto;
+  grid-auto-rows: 560px;
+}
+
+.rating {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+}
+
+.card-meta {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+  margin-top: 16px;
+}
