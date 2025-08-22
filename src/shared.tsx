@@ -1,21 +1,11 @@
-export const colors = [
-  "#e3f2ff", //blue
-  "#e3e3ff", //purple
-  "#e2fec5", //lime
-  "#ffe7a9", //yellow
-  "#ffe3fb", //pink
-  "#dbf5f0", //green
-  "#ffede3", //salmon
-]
-
-export const backgroundColorClasses = [
-  "blue-background",
-  "purple-background",
-  "lime-background",
-  "yellow-background",
-  "pink-background",
-  "green-background",
-  "salmon-background",
+export const additionalAccentColors = [
+  "#e3f2ff", // blue
+  "#e3e3ff", // purple
+  "#e2fec5", // lime
+  "#ffe7a9", // yellow
+  "#ffe3fb", // pink
+  "#dbf5f0", // green
+  "#ffede3", // salmon
 ]
 
 export function Bullet({ fillColor, size = 11 }: { fillColor: string; size?: number }) {
