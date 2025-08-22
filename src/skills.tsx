@@ -48,7 +48,6 @@ export function Skills() {
         {areasOfInterest.map((area, index) => (
           <div key={index} className="badge">
             <Bullet fillColor={additionalAccentColors[index % additionalAccentColors.length]} />
-            <img src={`https://cdn.prod.website-files.com/6659affa71a3c7c8796f55fd/66716f45${index + 1}.svg`} loading="lazy" alt="" />
             <span >{area}</span>
           </div>
         ))}
