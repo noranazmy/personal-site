@@ -8,7 +8,7 @@ import { Other } from './other';
 
 export default function App() {
   return (
-    <div className="app">
+    <div className="app-page">
       <NavBar />
       <Hero />
       <Highlights />

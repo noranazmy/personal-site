@@ -2,7 +2,7 @@ import './hero.css'
 
 export function Hero() {
   return (
-    <section id="home" className="hero">
+    <section id="hero" className="hero">
       <div className="heading">
         <img src="/Photo.jpg" alt="Personal photo" className="hero-image" />
         <div className="display-2">
