@@ -16,6 +16,12 @@ section.hero {
   width: var(--image-size);
 }
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .resume-button {
   align-self: flex-start;
 }
