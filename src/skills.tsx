@@ -42,7 +42,7 @@ function ProgressBar({ title, progress }: { title: string; progress: Number }) {
 
 export function Skills() {
   return (
-    <section id="skills" className="skills">
+    <section id="skills" className="skills heading-and-content">
       <h1>Technical skills</h1>
       <div className="areas-of-interest">
         {areasOfInterest.map((area, index) => (

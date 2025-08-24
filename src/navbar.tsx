@@ -33,12 +33,12 @@ export function NavBar() {
         <ul className="socials">
           <SocialLink
             href="https://www.instagram.com/noran.azmy/"
-            imgSrc="/instagram.png"
+            imgSrc="/instagram.svg"
             alt="Instagram"
           />
           <SocialLink
             href="https://www.linkedin.com/in/noranazmy/"
-            imgSrc="/linkedin.png"
+            imgSrc="/linkedin.svg"
             alt="LinkedIn"
           />
         </ul>

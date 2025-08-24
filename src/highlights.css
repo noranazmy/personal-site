@@ -3,7 +3,7 @@ section.highlights {
   display: flex;
   flex-flow: column nowrap;
   gap: 64px;
-  padding: 48px 0;
+  padding: 0 0 32px;
 }
 
 .highlights-grid {
