@@ -2,13 +2,12 @@ section.highlights {
   align-items: flex-start;
   display: flex;
   flex-flow: column nowrap;
-  gap: 64px;
   padding: 0 0 32px;
 }
 
 .highlights-grid {
   display: grid;
-  grid-gap: 64px;
-  grid-template-columns: repeat(auto-fit, minmax(var(--min-content-width), 1fr));
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
 }

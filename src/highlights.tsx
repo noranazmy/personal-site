@@ -10,8 +10,8 @@ export function Highlights() {
         </div>
         <div>
           <p>
-            I am currently working on a Masters degree in AI Ethics and Society at the University of Cambridge.
-            I am interested in anti-capitalist theories of AI, and the relationship between AI, labor, resistance, and community building.
+            I am currently working on a Masters degree in <a href="https://www.pace.cam.ac.uk/courses/mst-ai-ethics-and-society" target="_blank">AI Ethics and Society</a> at the University of Cambridge.
+            I am interested in the relationship between AI and capitalism, labor, resistance, and community building.
           </p>
         </div>
         <div>
