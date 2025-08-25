@@ -3,7 +3,7 @@ import './highlights.css'
 export function Highlights() {
   return (
     <section id="highlights" className="highlights">
-      <div className="highlights-grid">
+      <div className="card highlights-grid">
         <div>
           <h2>AI Ethics</h2>
           <p>2024 &mdash; Current</p>

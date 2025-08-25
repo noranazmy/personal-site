@@ -37,7 +37,7 @@ export function Reading() {
   return (
     <div className="app-page">
       <section id="reading" className="reading full-bleed">
-        <div className="heading full-bleed-content">
+        <div className="reading-heading full-bleed-content">
           <h1>Reading log</h1>
           <p className="paragraph-large">
             A selection of books I've read recently, along with brief notes.

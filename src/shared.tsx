@@ -1,8 +1,8 @@
 export const additionalAccentColors = [
   "#e3f2ff", // blue
-  "#e3e3ff", // purple
-  "#e2fec5", // lime
   "#ffe7a9", // yellow
+  "#e2fec5", // lime
+  "#e3e3ff", // purple
   "#ffe3fb", // pink
   "#dbf5f0", // green
   "#ffede3", // salmon

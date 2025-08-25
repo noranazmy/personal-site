@@ -7,6 +7,18 @@ section.highlights {
 
 .highlights-grid {
   display: grid;
-  gap: 24px 48px;
+  gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 24px;
+}
+
+.highlight-title {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.highlight-title svg {
+  margin-top: -4px;
 }
