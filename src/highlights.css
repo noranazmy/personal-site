@@ -7,9 +7,9 @@ section.highlights {
 
 .highlights-grid {
   display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 24px;
+  gap: 24px 96px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 32px;
 }
 
 .highlight-title {

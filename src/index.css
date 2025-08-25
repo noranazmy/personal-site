@@ -78,26 +78,26 @@ strong {
 }
 
 .site-title {
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .display-1 {
   font-size: 3.5rem;
   font-weight: 200;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 .display-2 {
   font-size: 2.6rem;
   font-weight: 200;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 .display-3 {
   font-size: 2.5rem;
   font-weight: 200;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 a,
