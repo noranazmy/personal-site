@@ -9,7 +9,7 @@ export function Hero() {
           <div className="display-2">
             Software engineer and AI ethics researcher
           </div>
-          <p className="paragraph-largest">
+          <p className="paragraph-large">
             I am a senior full-stack software engineer with a focus on
             product engineering, UI/UX design, tech ethics, and politics.
           </p>

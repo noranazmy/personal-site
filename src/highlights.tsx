@@ -17,9 +17,9 @@ export function Highlights() {
         <div>
           <h2>Software Engineering</h2>
           <p>2016 &mdash; Current</p>
-          <a className="button" href="#skills">
-            <span className="material-symbols-outlined">
-              arrow_downward
+          <a className="button icon-button-downwards" href="#skills">
+            <span className="material-icon material-symbols-outlined">
+              arrow_right_alt
             </span>
             See skills
           </a>
@@ -33,9 +33,9 @@ export function Highlights() {
         <div>
           <h2>Computer Science</h2>
           <p>2004 &mdash; 2016</p>
-          <a className="button" href="https://www.researchgate.net/profile/Noran-Azmy" target="_blank" rel="noopener noreferrer">
-            <span className="material-symbols-outlined">
-              arrow_outward
+          <a className="button icon-button-new-tab" href="https://www.researchgate.net/profile/Noran-Azmy" target="_blank" rel="noopener noreferrer">
+            <span className="material-icon material-symbols-outlined">
+              arrow_right_alt
             </span>
             View publications
           </a>
