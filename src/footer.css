@@ -1,0 +1,24 @@
+section.footer {
+  background: var(--primary);
+  border-top: 2px solid var(--text);
+  color: var(--background);
+  padding: 48px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
+}
+
+.flags {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+}
+
+.flag {
+  height: 32px;
+  width: 32px;
+}

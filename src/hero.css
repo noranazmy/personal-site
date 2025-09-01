@@ -1,0 +1,27 @@
+section.hero {
+  padding: 0 0 48px;
+}
+
+.heading {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 48px;
+}
+
+.hero-image {
+  --image-size: 240px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  height: var(--image-size);
+  width: var(--image-size);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resume-button {
+  align-self: flex-start;
+}

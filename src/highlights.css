@@ -1,0 +1,24 @@
+section.highlights {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0 0 32px;
+}
+
+.highlights-grid {
+  display: grid;
+  gap: 24px 96px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 32px;
+}
+
+.highlight-title {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.highlight-title svg {
+  margin-top: -4px;
+}

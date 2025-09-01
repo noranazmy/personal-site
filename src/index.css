@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  color-scheme: light dark;
+  font-family: Bricolage Grotesque, Helvetica, Arial, sans-serif;
+
+  --app-width: 1280px;
+  --content-width: 960px;
+  --min-content-width: 300px;
+  --gutter: clamp(16px, 5vw, 48px);
+}
+
+:root.theme-chocolate {
+  --background: #F6F3EC;
+  --surface: #ECE4DA;
+  --accent: #B9A590;
+  --primary: #574C3F;
+  --text: #36302A;
+}
+
+.app-page {
+  display: grid;
+  grid-template-columns: minmax(var(--gutter), 1fr) minmax(0, var(--content-width)) minmax(var(--gutter), 1fr);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+section:not(.full-bleed) {
+  grid-column: 2;
+  max-width: var(--app-width);
+  width: 100%;
+}
+
+section.full-bleed {
+  grid-column: 1 / span 3;
+}
+
+.full-bleed-content {
+  margin: 0 auto;
+  max-width: var(--content-width);
+  width: 100%;
+}
+
+.full-bleed-wide {
+  margin: 0 auto;
+  max-width: var(--app-width);
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .full-bleed-content {
+    padding: 0 var(--gutter);
+  }
+}
+
+body {
+  background: var(--surface);
+  color: var(--text);
+  display: flex;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+  min-height: 100vh;
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+.site-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.display-1 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  line-height: 1.2em;
+}
+
+.display-2 {
+  font-size: 2.6rem;
+  font-weight: 200;
+  line-height: 1.2em;
+}
+
+.display-3 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 1.2em;
+}
+
+a,
+a:link,
+a:visited {
+  color: unset;
+}
+
+.button {
+  align-items: center;
+  border: 1px solid var(--primary);
+  border-radius: 24px;
+  color: text;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 12px 16px;
+  width: fit-content;
+  text-decoration: none;
+  transition: color 0.25s ease, color 0.25s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.button.primary {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.button:hover,
+.button.primary:hover {
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+.card {
+  background: var(--background);
+  border: 1px solid var(--text);
+  border-radius: 16px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.4em;
+  margin: 0 0 20px 0;
+}
+
+.paragraph-large {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.5em;
+}
+
+.paragraph-largest {
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1.5em;
+}
+
+.label {
+  letter-spacing: .02rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 200;
+  line-height: 1em;
+}
+
+.heading-and-content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
+  padding: 32px 0;
+}
+
+/* These buttons have a right-facing arrow that animates to the desired direction on hover. */
+@media (hover: hover) and (pointer: fine) {
+  .icon-button-new-tab:hover .material-icon {
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+  }
+
+  .icon-button-downwards:hover .material-icon {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+}
+
+/* On mobile or devices that don't support hover, the arrow should be in the rotated state. */
+@media (hover: none) {
+  .icon-button-new-tab .material-icon {
+    transform: rotate(-45deg);
+  }
+
+  .icon-button-downwards .material-icon {
+    transform: rotate(90deg);
+  }
+}

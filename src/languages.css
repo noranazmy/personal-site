@@ -1,0 +1,28 @@
+.language-badges {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.language-level {
+  color: var(--surface);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--text);
+  margin-bottom: 0;
+  margin-right: 5px;
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+
+.language-badge {
+  align-items: center;
+  background-color: var(--background);
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+  display: inline-flex;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  padding: 0 12px;
+}
