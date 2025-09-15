@@ -13,7 +13,7 @@ const areasOfInterest = [
 
 const skills = new Map([
   ["TypeScript", 90],
-  ["Python", 15],
+  ["Python", 25],
   ["Java", 85],
   ["Go", 15],
   ["HTML/CSS", 90],
@@ -21,6 +21,7 @@ const skills = new Map([
   ["React", 15],
   ["Dart", 50],
   ["SQL", 85],
+  ["Material Design", 90]
 ]);
 
 function ProgressBar({ title, progress }: { title: string; progress: Number }) {
@@ -44,18 +45,20 @@ export function Skills() {
   return (
     <section id="skills" className="skills heading-and-content">
       <h1>Technical skills</h1>
-      <div className="areas-of-interest">
-        {areasOfInterest.map((area, index) => (
-          <div key={index} className="badge">
-            <Bullet fillColor={additionalAccentColors[index % additionalAccentColors.length]} />
-            <span >{area}</span>
-          </div>
-        ))}
-      </div>
-      <div className="progress-grid">
-        {Array.from(skills.keys()).map((skill) => (
-          <ProgressBar title={skill} progress={skills.get(skill)!} />
-        ))}
+      <div className="skill-blocks">
+        <div className="areas-of-interest">
+          {areasOfInterest.map((area, index) => (
+            <div key={index} className="badge">
+              <Bullet fillColor={additionalAccentColors[index % additionalAccentColors.length]} />
+              <span >{area}</span>
+            </div>
+          ))}
+        </div>
+        <div className="progress-grid">
+          {Array.from(skills.keys()).sort().map((skill) => (
+            <ProgressBar title={skill} progress={skills.get(skill)!} />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -15,8 +15,8 @@ export function Hero() {
           </p>
         </div>
         <a className="button primary resume-button" href="/Resume.pdf" target="_blank">
-          <span className="material-symbols-outlined button-icon">
-            download
+          <span className="material-symbols-outlined button-icon horizontal_flip">
+            file_open
           </span>
           Resume <span className="label">PDF</span>
         </a>

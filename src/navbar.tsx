@@ -27,15 +27,16 @@ export function NavBar() {
     <section id="navbar" className={`navbar full-bleed ${scrolled ? "scrolled" : ""}`}>
       <div className="navigation-bar full-bleed-content">
         <div className="site-title"><a href="/">Noran Azmy</a></div>
-        {/* TODO: Add the right navigation links. */}
         <div className="navigation">
+          <div>
+            <a
+              className='navigation-link'
+              target="_blank"
+              href="https://themindfulmuslim.com">
+              Blog</a>
+          </div>
         </div>
         <ul className="socials">
-          <SocialLink
-            href="https://www.instagram.com/noran.azmy/"
-            imgSrc="/instagram.svg"
-            alt="Instagram"
-          />
           <SocialLink
             href="https://www.linkedin.com/in/noranazmy/"
             imgSrc="/linkedin.svg"

@@ -1,10 +1,11 @@
 section.navbar {
   background: var(--surface);
-  position: sticky;
-  padding: 48px 0;
+  padding: 64px 0 48px;
+  /*
   transition: border-bottom 0.3s ease;
+  position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1000; */
 }
 
 .navigation-bar {
@@ -15,8 +16,22 @@ section.navbar {
   gap: 24px;
 }
 
-.navigation-bar a {
+.site-title {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.site-title a,
+.socials a {
   color: var(--text);
+  text-decoration: none;
+}
+
+.navigation-link {
+  align-items: center;
+  display: flex;
+  font-size: 1.2em;
+  gap: 8px;
   text-decoration: none;
 }
 

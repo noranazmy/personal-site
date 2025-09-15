@@ -50,3 +50,9 @@
   height: 100%;
   position: absolute;
 }
+
+.skill-blocks {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 48px;
+}

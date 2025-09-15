@@ -27,6 +27,14 @@ html {
   --text: #36302A;
 }
 
+:root.theme-grey {
+  --background: #FFFFFF;
+  --surface: #EBEAEB;
+  --accent: #BDB2C3;
+  --primary: #5C5751;
+  --text: #000000;
+}
+
 .app-page {
   display: grid;
   grid-template-columns: minmax(var(--gutter), 1fr) minmax(0, var(--content-width)) minmax(var(--gutter), 1fr);
@@ -75,11 +83,6 @@ body {
 b,
 strong {
   font-weight: 500;
-}
-
-.site-title {
-  font-size: 1.4rem;
-  font-weight: 400;
 }
 
 .display-1 {
@@ -238,4 +241,8 @@ p {
   .icon-button-downwards .material-icon {
     transform: rotate(90deg);
   }
+}
+
+.horizontal_flip {
+  transform: rotateY(180deg);
 }
