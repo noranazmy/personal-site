@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-weight: 300;
     line-height: 1.7;
     color: var(--text-primary);
@@ -28,8 +28,8 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 2560px;
+    margin: 0 2vw;
     padding: 60px 40px;
 }
 
@@ -39,6 +39,7 @@ body {
 }
 
 .tagline {
+    font-family: 'acumin-pro', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.6;
@@ -79,6 +80,7 @@ body {
 }
 
 .section-title {
+    font-family: 'acumin-pro', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.1em;
@@ -136,7 +138,7 @@ body {
 
 .image-container img {
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     height: auto;
     display: block;
     margin-bottom: 12px;
@@ -168,6 +170,7 @@ body {
 }
 
 .career-title {
+    font-family: 'acumin-pro', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 8px;
