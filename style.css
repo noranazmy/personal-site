@@ -260,3 +260,37 @@ footer {
     flex-flow: row nowrap;
     gap: 16px;
 }
+
+.about-content {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.about-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    flex-shrink: 0;
+}
+
+.about-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
+}
+
+.about-text p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+    }
+}
