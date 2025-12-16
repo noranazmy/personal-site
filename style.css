@@ -266,7 +266,6 @@ footer {
     height: 64px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: right center;
     filter: grayscale(100%);
     flex-shrink: 0;
 }
