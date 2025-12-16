@@ -89,9 +89,31 @@ a:hover {
 }
 
 .button {
+    color: var(--accent-color);
     font-family: var(--heading-font);
-    font-size: 1.8rem;
     font-weight: 400;
+    width: fit-content;
+}
+
+.button:hover {
+    color: var(--accent-hover);
+}
+
+.button:hover i {
+    transform: rotate(-45deg);
+}
+
+.button.large {
+    font-size: 1.8rem;
+}
+
+.button.text {
+    border-bottom: 1px solid var(--accent-color);
+    text-decoration: none;
+}
+
+.button.text:hover {
+    border-bottom: 1px solid var(--accent-hover);
 }
 
 li {
