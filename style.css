@@ -270,10 +270,6 @@ footer {
     flex-shrink: 0;
 }
 
-.open-in-new-icon {
-    transition: transform 0.3s ease;
-}
-
-.open-in-new-icon:hover {
+a:hover .open-in-new-icon {
     transform: rotate(-45deg);
 }
