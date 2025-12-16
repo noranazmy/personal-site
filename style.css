@@ -178,39 +178,15 @@ footer {
 }
 
 .resume-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    display: inline-block;
     font-size: 2.2rem;
     color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 400;
-}
-
-.resume-link h3 {
     text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: .3rem;
-}
-
-.resume-link .resume-arrow {
-    display: inline;
-}
-
-.resume-link .resume-arrow-hover {
-    display: none;
+    font-weight: 400;
 }
 
 .resume-link:hover {
     color: var(--accent-hover);
-}
-
-.resume-link:hover .resume-arrow {
-    display: none;
-}
-
-.resume-link:hover .resume-arrow-hover {
-    display: inline;
 }
 
 .content {
@@ -292,4 +268,8 @@ footer {
     object-fit: cover;
     filter: grayscale(100%);
     flex-shrink: 0;
+}
+
+.open-in-new-icon:hover {
+    
 }
