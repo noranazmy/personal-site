@@ -99,6 +99,11 @@ a:hover {
     color: var(--accent-hover);
 }
 
+.button i {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
 .button:hover i {
     transform: rotate(-45deg);
 }
