@@ -178,15 +178,39 @@ footer {
 }
 
 .resume-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     font-size: 2.2rem;
     color: var(--accent-color);
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 400;
+}
+
+.resume-link h3 {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .3rem;
+}
+
+.resume-link .resume-arrow {
+    display: inline;
+}
+
+.resume-link .resume-arrow-hover {
+    display: none;
 }
 
 .resume-link:hover {
     color: var(--accent-hover);
+}
+
+.resume-link:hover .resume-arrow {
+    display: none;
+}
+
+.resume-link:hover .resume-arrow-hover {
+    display: inline;
 }
 
 .content {
