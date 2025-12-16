@@ -99,11 +99,6 @@ a:hover {
     color: var(--accent-hover);
 }
 
-.button i {
-    display: inline-block;
-    transition: transform 0.2s ease;
-}
-
 .button:hover i {
     transform: rotate(-45deg);
 }
@@ -119,6 +114,11 @@ a:hover {
 
 .button.text:hover {
     border-bottom: 1px solid var(--accent-hover);
+}
+
+.button i {
+    display: inline-block;
+    transition: transform 0.2s ease;
 }
 
 li {
@@ -190,12 +190,6 @@ footer {
     height: 28px;
     list-style-type: none;
     padding: 2px 8px;
-}
-
-.chip:hover {
-    border-color: var(--accent-hover);
-    color: var(--accent-hover);
-    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .flex-row {
