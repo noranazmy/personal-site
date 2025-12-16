@@ -1,8 +1,8 @@
 :root {
     --accent-color: #E8503A;
     --accent-hover: #d4432f;
-    --text-primary: #1a1a1a;
-    --text-secondary: #333;
+    --text-primary: #000;
+    --text-secondary: #4f4f4f;
     --text-muted: #666;
     --bg-color: #ffffff;
     --border-color: #e0e0e0;
@@ -23,38 +23,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-a {
-    color: var(--accent-color);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: .2em;
-}
-
-a:hover {
-    color: var(--accent-hover);
-}
-
-.icon-button,
-.icon-button:hover {
-    color: var(--text-primary);
-}
-
-.chip {
-    border: 1px solid var(--text-secondary);
-    border-radius: 14px;
-    font-size: 0.8rem;
-    height: 28px;
-    list-style-type: none;
-    padding: 2px 8px;
-}
-
-.flex-row {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 8px;
 }
 
 h1,
@@ -110,18 +78,99 @@ body {
     background-color: var(--bg-color);
 }
 
+a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .3rem;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+li {
+    list-style-type: none;
+}
+
+.paragraph-small {
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+footer {
+    margin: 32px 0;
+}
+
 .container {
     display: flex;
     flex-flow: column nowrap;
     gap: 48px;
     max-width: 2560px;
-    margin: 2vw;
+    margin: 3vw;
+}
+
+.app-bar {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 32px;
+}
+
+.navigation a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.navigation {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 24px;
+}
+
+.navigation a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .3rem;
 }
 
 .section {
     display: flex;
     flex-flow: column nowrap;
-    gap: 32px;
+    gap: 48px;
+}
+
+.section.compact {
+    gap: 24px;
+}
+
+.icon-button,
+.icon-button:hover {
+    color: var(--text-primary);
+}
+
+.chip {
+    border: 1px solid var(--text-primary);
+    border-radius: 14px;
+    font-size: 0.8rem;
+    height: 28px;
+    list-style-type: none;
+    padding: 2px 8px;
+}
+
+.chip:hover {
+    border-color: var(--accent-hover);
+    color: var(--accent-hover);
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.flex-row {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
 }
 
 .hero {
@@ -142,8 +191,8 @@ body {
 
 .content {
     display: grid;
-    grid-template-columns: 40% auto;
-    grid-gap: 96px;
+    grid-template-columns: 35% auto;
+    grid-gap: 128px;
 }
 
 .left-column {
@@ -155,11 +204,18 @@ body {
 .site-title {
     font-family: var(--heading-font);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .highlights-list,
 .highlights-list li {
+    list-style: none;
+}
+
+.ideas-list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
     list-style: none;
 }
 
@@ -173,69 +229,29 @@ body {
 }
 
 .image-credit {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 300;
     color: var(--text-muted);
+    text-align: end;
 }
 
-
-.career-item {
-    margin-bottom: 50px;
-    max-width: 700px;
-}
-
-.career-title {
-    font-family: var(--heading-font);
-    font-size: 1.25rem;
-    font-weight: 400;
-    margin-bottom: 8px;
-    color: var(--text-primary);
-}
-
-.career-date {
-    font-size: 0.85rem;
-    font-weight: 400;
-    color: var(--text-muted);
-    margin-bottom: 12px;
-}
-
-.career-description {
-    font-size: 0.95rem;
-    font-weight: 300;
-    color: var(--text-secondary);
-    line-height: 1.8;
+.image-credit a {
+    color: inherit;
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 40px 24px;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 48px;
+        margin: 6vw;
     }
 
     .content {
-        flex-direction: column;
-        gap: 40px;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 48px;
     }
-
-    .left-column,
-    .right-column {
-        max-width: 100%;
-    }
-
-    .tagline {
-        font-size: 1.25rem;
-    }
-
-    .image-container {
-        position: static;
-    }
-
-    .image-container img {
-        max-width: 100%;
-    }
-}
-
-li {
-    list-style-type: circle;
 }
 
 .socials {
