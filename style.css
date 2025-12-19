@@ -185,9 +185,9 @@ footer {
 
 .chip {
     border: 1px solid var(--text-primary);
-    border-radius: 14px;
-    font-size: 0.8rem;
-    height: 28px;
+    border-radius: 15px;
+    font-size: .9rem;
+    height: 30px;
     list-style-type: none;
     padding: 2px 8px;
 }
