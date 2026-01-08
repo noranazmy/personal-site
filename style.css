@@ -108,13 +108,12 @@ a:hover {
 }
 
 .button.text {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: .3rem;
+    border-bottom: 1px solid var(--accent-color);
+    text-decoration: none;
 }
 
 .button.text:hover {
-    color: var(--accent-hover);
+    border-bottom: 1px solid var(--accent-hover);
 }
 
 .button i {
