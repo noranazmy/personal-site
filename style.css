@@ -138,10 +138,16 @@ a:hover {
     transition: transform 0.2s ease;
 }
 
+ul {
+    padding-left: 1.2rem;
+    margin-left: 0;
+}
+
 li {
-    list-style-type: circle;
-    list-style-position: inside;
     color: var(--text-primary);
+    list-style-type: circle;
+    list-style-position: outside;
+    padding-left: .2rem;
 }
 
 .paragraph-small {
@@ -217,6 +223,10 @@ footer {
     padding: 2px 8px;
 }
 
+ul.flex-row {
+    padding-left: 0;
+}
+
 .flex-row {
     align-items: center;
     display: flex;
@@ -275,6 +285,7 @@ header {
 .highlights-list,
 .highlights-list li {
     list-style: none;
+    padding-left: 0;
 }
 
 .ideas-list {
