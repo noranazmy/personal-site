@@ -33,7 +33,7 @@ h5,
 h6 {
     font-family: var(--heading-font);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 0em;
     line-height: 1.4em;
 }
