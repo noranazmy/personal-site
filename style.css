@@ -107,6 +107,7 @@ a:hover {
 
 .button.large {
     font-size: 1.8rem;
+    gap: 8px;
 }
 
 .button.text {
