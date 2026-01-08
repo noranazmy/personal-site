@@ -250,6 +250,30 @@
         scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({top: 0, behavior: 'smooth'});
         });
+
+        const jumpToTrigger = document.querySelector('.jump-to-trigger');
+        const jumpToMenu = document.querySelector('.jump-to-menu');
+        const jumpTo = document.querySelector('.jump-to');
+
+        jumpToTrigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            jumpTo.classList.toggle('open');
+        });
+
+        jumpToMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                jumpTo.classList.remove('open');
+                appBar.classList.remove('menu-open');
+                hamburger.setAttribute('aria-expanded', false);
+                hamburger.querySelector('i').className = 'bi bi-list';
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!jumpTo.contains(e.target)) {
+                jumpTo.classList.remove('open');
+            }
+        });
     </script>
 </body>
 

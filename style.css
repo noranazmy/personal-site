@@ -481,20 +481,24 @@ a:hover .open-in-new-icon {
 
     .app-bar.menu-open .jump-to-menu {
         position: static;
-        opacity: 1;
-        visibility: visible;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
         transform: none;
         border: none;
         box-shadow: none;
-        padding: 12px 0 0 0;
+        padding: 0;
         min-width: auto;
         text-align: center;
-        display: none;
+        transition: opacity 0.2s ease, visibility 0.2s ease, max-height 0.3s ease, padding 0.2s ease;
     }
 
-    .app-bar.menu-open .jump-to:hover .jump-to-menu,
-    .app-bar.menu-open .jump-to:focus-within .jump-to-menu {
-        display: block;
+    .app-bar.menu-open .jump-to.open .jump-to-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 400px;
+        padding: 12px 0 0 0;
     }
 
     .app-bar.menu-open .jump-to-menu a {
