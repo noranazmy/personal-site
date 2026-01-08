@@ -6,6 +6,8 @@
     --text-muted: #666;
     --bg-color: #ffffff;
     --border-color: #e0e0e0;
+    --container-color: #1f1f1f;
+    --container-bg-color: #f6f6f6;
 
     --heading-font: 'Acumin', -apple-system, BlinkMacSystemFont, sans-serif;
     --body-font: 'Poppins';
@@ -79,9 +81,8 @@ body {
 
 a {
     color: var(--accent-color);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: .3rem;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 a:hover {
@@ -187,9 +188,11 @@ footer {
 }
 
 .chip {
-    border: 1px solid var(--text-primary);
+    background-color: var(--container-bg-color);
     border-radius: 15px;
+    color: var(--container-color);
     font-size: .9rem;
+    font-weight: 400;
     height: 30px;
     list-style-type: none;
     padding: 2px 8px;
