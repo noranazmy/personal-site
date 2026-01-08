@@ -159,6 +159,11 @@ footer {
     margin: 32px 0;
 }
 
+.slant {
+    display: inline-block;
+    transform: skewX(-8deg);
+}
+
 .container {
     display: flex;
     flex-flow: column nowrap;
