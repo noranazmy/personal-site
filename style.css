@@ -197,6 +197,10 @@ footer {
     gap: 24px;
 }
 
+.section.dense {
+    gap: 8px;
+}
+
 .icon-button,
 .icon-button:hover {
     color: var(--text-primary);
