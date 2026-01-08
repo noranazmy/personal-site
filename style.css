@@ -168,7 +168,6 @@ footer {
 .container {
     display: flex;
     flex-flow: column nowrap;
-    gap: 48px;
     max-width: 2560px;
     margin: 3vw;
 }
@@ -291,6 +290,7 @@ ul.flex-row {
 }
 
 header {
+    margin-bottom: 48px;
     width: 100%;
 }
 
@@ -371,7 +371,6 @@ header {
     .container {
         display: flex;
         flex-flow: column nowrap;
-        gap: 48px;
         margin: 6vw;
     }
 
