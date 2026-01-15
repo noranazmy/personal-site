@@ -556,3 +556,16 @@ a:hover .open-in-new-icon {
         right: 6vw;
     }
 }
+
+.research-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 32px;
+    grid-row-gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+}
