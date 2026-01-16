@@ -163,7 +163,7 @@ footer {
 .footer-pattern {
     width: 100%;
     height: 100px;
-    background-image: url('keffiyeh-pattern.jpg');
+    background-image: url('assets/keffiyeh-pattern.jpg');
     background-repeat: repeat-x;
     background-size: 200px auto;
     background-position: center bottom;
